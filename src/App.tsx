@@ -32,18 +32,6 @@ function App() {
       calculateWinner();
   }, [shoyuVote, tokutsuVote, shioVote, misoVote])
 
-  //   const calculateWinner = (): void => {
-  //   shoyuVote > tokutsuVote
-  //     ? setWinner("Shoyu Ramen")
-  //     : tokutsuVote > shioVote
-  //       ? setWinner('Tokutsu Ramen')
-  //       : misoVote > shioVote
-  //       ? setWinner("Miso Ramen")
-  //       : shioVote > misoVote
-  //         ? setWinner("Shio Ramen")
-  //         : setWinner(null)
-  // }
-
     const calculateWinner = (): void => {
     const voteCounts: Record<string, number> = {
       'Shoyu Ramen': shoyuVote,
